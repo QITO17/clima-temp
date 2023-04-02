@@ -1,0 +1,165 @@
+.temp--conteiner{
+    position: relative;
+}
+
+.App--hidden{
+    opacity: .7;
+}
+
+#radio{
+    position: absolute;
+    left: 3vh;
+    top: 3vh;
+    
+}
+
+.conteiner .article--item:hover{
+    
+    box-shadow: 13px 13px 10px white;
+}
+
+.article--item {
+    transition: 1s box-shadow;
+  }
+ 
+*{
+    font-family: 'Indie Flower', cursive;
+}
+
+.banner{
+  border-radius: 20px;
+    max-width: 230px;
+    height: 250px;
+    overflow: hidden;
+    background-color: rgb(219, 148, 148);
+    position:absolute;
+    top: -100%;
+    /*left: -100%; */
+    
+}
+.banner--visivility{
+  animation: movieBanner 5s;
+  top: 30%;
+  /*left: -100%; */
+  
+}
+.banner--hidden{
+  display: none;
+}
+
+.banner .Informacion{
+  position: relative;
+  padding: 15px 30px;
+  color: #FFF;
+  text-align: center;
+}
+.contenedor--logos{
+    position: absolute;
+    bottom: 5vh;
+}
+
+ul {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    position: relative;
+    transform: translate(0%, 0%);
+  }
+  
+  ul li {
+    list-style: none;
+  }
+  
+  ul li a {
+    width: 80px;
+    height: 80px;
+    background-color: #fff;
+    text-align: center;
+    line-height: 80px;
+    font-size: 35px;
+    margin: 0 10px;
+    display: block;
+    border-radius: 50%;
+    position: relative;
+    overflow: hidden;
+    border: 3px solid #fff;
+    z-index: 1;
+  }
+  
+  ul li a .icon {
+    position: relative;
+    color: #262626;
+    transition: .5s;
+    z-index: 3;
+  }
+  
+  ul li a:hover .icon {
+    color: #fff;
+    transform: rotateY(360deg);
+  }
+  
+  ul li a:before {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #f00;
+    transition: .5s;
+    z-index: 2;
+  }
+  
+  ul li a:hover:before {
+    top: 0;
+  }
+  
+  ul li:nth-child(1) a:before{
+    background: #3b5999;
+  }
+  
+  ul li:nth-child(2) a:before{
+    background: #55acee;
+  }
+  
+  ul li:nth-child(3) a:before {
+    background: #0077b5;
+  }
+  
+  ul li:nth-child(4) a:before {
+    background: #dd4b39;
+  }
+.close{
+  position: absolute;
+  right: 3px;
+  top: 3px;
+}
+.button1{
+  padding: 10px 25px;
+  border: solid 1px #999;
+  border-radius: 10px;
+  background-color: rgb(236, 236, 236);
+  color: #000;
+  font-size: 1.3rem;
+  margin-top: 10px;
+  
+}
+
+@keyframes movieBanner {
+  
+  0%{
+    top: 0%;
+  }
+
+  70%{
+    top: 50%;
+  }
+}
+
+.dance{
+  position: absolute;
+  width: 5vh;
+  height: 5vh;
+  left: 10px;
+  bottom: 3px;
+}
