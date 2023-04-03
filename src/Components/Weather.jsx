@@ -45,7 +45,7 @@ const Weather = ({weather, temp}) => {
                 <article className='article--item bg-slate-300/70  rounded-3xl grid grid-cols-2 justify-items-center sm:px-2 items-center py-2'>
                     <h3 className='capitalize col-start-1 col-end-3'>{weather.weather[0].description}</h3>
                     
-                        <h2 className='text-[43px] font-light sm:text-6xl'>{isCelcius ? `${temp.celcius}   °C` : `${temp.farenheit} °C`}</h2>
+                        <h2 className='text-[43px] font-light sm:text-6xl'>{isCelcius ? `${temp.celcius}   °C` : `${temp.farenheit} °F`}</h2>
                         <div className="img">
                             <img className='icon--item' src={`https://openweathermap.org/img/wn/${weather.weather[0].icon}@4x.png`} alt="" />
                         </div>
